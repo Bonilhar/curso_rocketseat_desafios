@@ -1,0 +1,3 @@
+Este é um repositório criado para treinar as tecnologias aprendidas no curso Discover da Rocketseat;
+
+Em breve, mais atualizações...
