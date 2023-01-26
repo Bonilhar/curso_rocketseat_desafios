@@ -6,4 +6,4 @@ Neste desafio você deve criar uma página com uma lista de links que pode ser u
 
 ## Layout
 
-[](./Base_social_tree.png)
+<img src="./Base_social_tree.png" >

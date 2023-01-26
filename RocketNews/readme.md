@@ -6,4 +6,4 @@ Desenvolva uma página para captação de leads ou newsletter.
 
 ## Layout
 
-[](./base_rocketnews.png.png)
+<img src="./base_rocketnews.png">
