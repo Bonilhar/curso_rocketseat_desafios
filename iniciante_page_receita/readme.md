@@ -2,8 +2,8 @@
 
 ---
 
-Neste desafio você poderá criar uma página web para que seja seu portfolio e currículo. Utilizando HTML e CSS.
+Nesse desafio você deverá criar uma página web de uma receita com título, imagem, lista de ingredientes e modo de preparo. O desafio está dividido em duas partes, no primeiro momento você irá criar a estrutura HTML com as informações da receita e na segunda parte será o momento de adicionar os estilos à página com o CSS.
 
 ## Layout
 
-<img src="./base_page-waffle.png">
+<img src="./base_page_waffle.png">
