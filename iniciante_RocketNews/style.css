@@ -60,12 +60,14 @@ header img {
 
 .form-email div {
   margin-top: 30px;
-  width: auto;
-  height: 50px;
+  width: fit-content;
+  height: 45px;
   display: flex;
   align-items: center;
   justify-content: left;
+  box-shadow: 10px 10px 10px rgba(32, 32, 32, 0.5);
 }
+
 
 .form-email a {
   height: 45px;
@@ -99,3 +101,4 @@ header img {
   font-size: 1.5;
   font-weight: bold;
 }
+
