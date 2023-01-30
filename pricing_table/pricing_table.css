@@ -1,0 +1,191 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
+}
+
+body {
+  background: linear-gradient(
+    to top,
+    #f9fbfc 0%,
+    #f9fbfc 50%,
+    #1d539e 50%,
+    #1d539e 100%
+  );
+  height: 100vh;
+  min-width: 736px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+header {
+  width: 600px;
+  text-align: center;
+  color: white;
+  margin: 50px auto;
+}
+
+h1 {
+  font-size: 48px;
+  font-weight: 700;
+}
+
+h2 {
+  font-size: 20px;
+  font-weight: 400;
+  margin-top: 20px;
+}
+
+section { 
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+
+}
+
+a:hover {
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 4px 12px;
+}
+
+.card-plan {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-between;
+  width: 355px;
+  height: 470px;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+
+.card-plan hr {
+  border: 1px solid #EEEEEE;
+  width: 300px;
+  border-radius: 5px;
+}
+
+.card-plan-flex { 
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.card-plan-type {
+  width: 100%;
+  font-size: 18px;
+  font-weight: bold;
+  color: #1E2338;
+  text-align: left;
+  margin-bottom: 15px;
+}
+
+.card-plan-pricing {
+  font-size: 40px;
+  font-weight: 700;
+}
+
+.card-plan-pricing-cents {
+  font-size: 18px;
+}
+
+.card-plan-pricing-month {
+  font-size: 18px;
+  color: #828799;
+}
+
+.card-plan-description {
+  color: #828799;
+}
+
+.card-plan-include {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.card-plan-include-checks {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  gap: 10px ;
+  font-size: 16px;
+  color: #828799;
+}
+
+.card-plan-include-checks img {
+  width: 20px;
+}
+
+.card-plan-place-button {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 52px;
+}
+
+.card-plan-place-button button {
+  width: 305px;
+  height: 49px;
+  border-radius: 8px;
+  border: #1d539e solid 2px;
+  background-color: white;
+  font-size: 18px;
+  font-weight: 600;
+  color: #1D539E;
+  cursor: pointer;
+}
+
+.card-plan-principal {
+  height: 490px;
+}
+
+.card-plan-principal .card-plan-type {
+  background: #FFCC29;
+  height: 76px;
+  width: 315px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 0;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.card-plan-principal-type {
+  font-size: 20px;
+  font-weight: 600;
+  color: #1D539E;
+}
+
+.card-plan-principal-pop {
+  background-color: #1D539E;
+  width: 100px;
+  height: 32px;
+  border-radius: 15px;
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+}
+
+.card-plan-principal button {
+  background-color: #1D539E;
+  color: white;
+}
+
+.padding-base {
+  padding: 25px;
+}
+
+.padding-sides {
+  padding: 0 20px;
+}
