@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./countdonw.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+  <title>Countdown</title>
+</head>
+<body>
+  <header>
+    <img src="../assets/Countdown/top-image.svg" alt="top-image">
+  </header>
+
+  <main>
+    <nav>
+      <h2>Coloque aqui o dia e o horário do lançamento</h2>
+      <br>
+      <input id="date-for-launch" type="datetime-local" value="2022-01-01">
+    </nav>
+
+    <div class="launch-timer">
+      <h1>READY TO LAUNCH IN...</h1>
+      <div>
+        <div class="launch-timer-header">
+          <p>Dias</p>
+          <p>Horas</p>
+          <p>Minutos</p>
+          <p>Segundos</p>
+        </div>
+        <div class="launch-timer-count">
+          <p></p>
+        </div>
+      </div>
+      <p>Inscreva-se para saber mais sobre o lançamento</p>
+      <a href="https://github.com/Bonilhar/curso_rocketseat_desafios" target="_blank">
+        <button>Inscreva-se</button>
+      </a>
+    </div>
+
+    <div class="img-rocket">
+      <img src="../assets/Countdown/rocket.svg" alt="Foguete">
+    </div>
+
+  </main>
+  
+  <footer>
+    <img src="../assets/Countdown/bottom-image.svg" alt="top-image">
+  </footer>
+  
+  <script src="./countdown.js"></script>
+</body>
+</html>
