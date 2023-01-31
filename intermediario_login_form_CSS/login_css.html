@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./login_css.css">
+  <link rel="stylesheet" href="../assets/login_form_css/favicon.ico">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+  <title>Login Form css</title>
+</head>
+<body>
+
+  <section>
+    <header>
+      <img class="header-logo" src="../assets/login_form_css/logo.svg" alt="">
+    </header>
+    
+    <div class="login-box">
+      <div class="header-login margin-page margin-login-big-screen">
+        <div class="header-login-title">
+          <img src="../assets/login_form_css/log-in.svg" alt="">
+          <p>Faça seu Login</p>
+        </div>
+        <p class="header-login-contact" >Entre com suas informações de cadastro.</p>
+      </div>
+      
+      <form action="" method="post" class="form-login margin-page margin-login-big-screen">
+        <!--Lembrar: em geral em um form se utiliza o method post ou get
+        POST: utilizado para enviar para o servidor
+        GET: utilizado para receber do servidor-->
+        
+        <div>
+          <label for="form-login-email-input">E-mail</label>
+          <div class="form-login-box">
+            <img class="form-login-email-img" src="../assets/login_form_css/mail.svg" alt="e-mail">
+            <input id="form-login-email-input" type="email" placeholder="Digite seu e-mail">
+          </div>
+        </div>
+        
+        <div>
+          <label for="form-login-password-input">Senha</label>
+          <div class="form-login-box">
+            <img class="form-login-password-img" src="../assets/login_form_css/mail.svg" alt="senha">
+            <input id="form-login-password-input" type="password" placeholder="Digite sua senha">
+             <!--Como o desafio é apenas HTML + CSS utilizei as tags <a> ao inves de botões-->
+            <a class="form-login-password-img" href="./login_css.html">
+              <img src="../assets/login_form_css/eye.svg" alt="senha visível">
+            </a>
+          </div>
+        </div>
+  
+        <div class="form-login-other">
+          <div class="form-login-other-checkbox">
+            <label class="form-login-other-checkbox-label" for="checkbox-remember">
+              <input id="checkbox-remember" type="checkbox">
+              <img src="../assets/login_form_css/check.svg" alt="check-">
+            </label>
+            <span class="checkbox-remember-label">Lembre-me</span>
+          </div>
+          <a href="./login_css.html">Esqueci minha senha</a>
+        </div>
+  
+        <a class="form-login-button-send" href="./login_css.html">
+          ENTRAR
+        </a>
+        
+        <a class="form-login-register" href="./login_css.html">
+          <p>Não tem uma conta? <Strong>Registre-se</Strong></p>
+        </a>
+      </form>
+    </div>
+  </section>
+  
+  <img class="aside-img" src="../imgs/side-image.jpg" alt="">
+
+</body>
+</html>

@@ -1,0 +1,289 @@
+/*
+font-family: 'Poppins', sans-serif;
+font-family: 'Roboto', sans-serif;
+*/
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+input {
+  outline: none;
+  border-style: none;
+  width: 100%;
+  background-color: transparent;
+  color: #A9AFB9;
+}
+
+body {
+  background: #191816;
+  color: #AFB6C2;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-self: center;
+  align-items: center;
+  height: 100vh;
+  min-width: 375px;
+}
+
+button {
+  outline: none;
+  border-style: none;
+  background-color: transparent;
+}
+
+header {
+  width: 100%;
+  display: flex;
+}
+
+section {
+  display: flex;
+  flex-flow: column nowrap;
+}
+
+/*-----------general configs----------*/
+.margin-page {
+  margin: 0 20px;
+}
+
+/*HEADER - LOGO*/
+.header-logo {
+  margin: 40px 0 0 20px;
+  padding-top: 40px;
+  padding-bottom: 30px;
+  width: 115px;
+  height: 28px;
+}
+
+/*HEADER - LOGIN TITLE*/
+.header-login {
+  margin-bottom: 27px;
+}
+
+.header-login-title {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  justify-content: start;
+}
+
+.header-login-title p {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 36px;
+  color: #D4CCB6;
+}
+
+.header-login-contact {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  color: #AFB6C2;
+}
+
+/*FORM - LOGIN*/
+.form-login {
+  display: flex;
+  flex-flow: column wrap;
+  gap: 20px;
+}
+
+.form-login label {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.form-login-box {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border: 1px solid #868686;
+  border-radius: 4px;
+  height: 44px;
+  padding: 0 12px;
+  gap: 5px;
+  flex-basis: max-content;
+}
+
+.form-login-other {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.form-login-other a {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 21px;
+  color: #FFC632;
+}
+
+.form-login-other-checkbox {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  gap: 5px;
+}
+
+/*CHECKBOX*/
+#checkbox-remember[type="checkbox"] {
+  width: 0;
+  visibility: hidden;
+}
+
+.form-login-other-checkbox-label {
+  height: 20px;
+  width: 20px;
+  border: 1px solid #868686;
+  border-radius: 4px;
+  display: flex;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+/*ACTIVE CHECKBOX*/
+#checkbox-remember[type="checkbox"]:checked + img {
+  visibility: visible;
+  background-color: #FFC632;
+}
+
+/*Button*/
+.form-login-other-checkbox-label img {
+  visibility: hidden;
+}
+
+.form-login-other-checkbox span {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  width: 100px;
+}
+
+.form-login-button-send {
+  width: 100%;
+  height: 51px;
+  background: #FFC632;
+  border-radius: 4px;
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 27px;
+  letter-spacing: 0.015em;
+  text-transform: uppercase;
+  color: #473404;
+  display: flex;
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+  justify-content: center;
+  align-items: center;
+}
+
+.form-login-register strong{
+  color: #FFC632;
+}
+
+.form-login-register p {
+  text-align: center;
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+  color: #FFC632;
+}
+
+.aside-img {
+  visibility: hidden;
+  width: 0;
+  height: 0;
+}
+
+/*FOCUS*/
+.form-login-box:hover {
+  border: 1px solid #FFC632;
+  box-shadow: 0px 0px 0px 2px #FFDE88;
+  border-radius: 4px;
+}
+
+
+@media only screen and (min-width:600px) {
+  
+  body {
+    background: url(../imgs/side-image-2x.jpg) no-repeat fixed;
+    color: #AFB6C2;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+  }
+
+  header {
+    justify-content: center;
+    align-items: center;
+  }
+
+
+  section { 
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    flex-basis: 50%;
+    flex-grow: 1;
+  } 
+
+  .header-logo {
+    padding: 40px 0;
+  }
+
+  .margin-login-big-screen {
+    margin: 0 119px;
+  }
+
+  .header-login {
+    margin-bottom: 30px;
+  }
+
+  .login-box{
+    width: 100%;
+    width: 572px;
+    background-color: #24221F;
+    padding: 55px 0;
+    border-radius: 4px;
+
+  }
+}
+
+@media only screen and (min-width:1380px) {
+
+  body{ 
+    background: #191816;
+    display: grid;
+    grid-template-columns: 50% 50%;
+  }
+
+  .aside-img{
+    visibility: visible;
+    width: 100%;
+    height: 100%;
+  }
+}
