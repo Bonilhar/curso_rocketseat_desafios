@@ -1,0 +1,189 @@
+
+/*font-family: 'Roboto', sans-serif;*/
+
+* {
+  margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+  font-family: 'Roboto', sans-serif;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+
+body {
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  justify-content: center;
+  height: 1080px;
+  background-color: #ECECED;
+  z-index: 1;
+}
+
+main {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  width: 100%;
+  top: -40px;
+}
+
+nav {
+  display: flex;
+  position: relative;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-items: center;
+  color: black;
+  background-color: transparent;
+  top: 40px;
+  z-index: 2;
+  width: 100%;
+  padding: 0 60px;
+  height: 45px;
+}
+
+a {
+  color: black;
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 28px;
+  transition: 0.3s;
+}
+
+footer {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-items: center;
+  height: 165px;
+  width: 100%;
+  position: relative;
+  top: -40px;
+}
+
+/*-----------NAV----------*/
+.nav-searsh {
+  width: 220px;
+  height: 45px;
+  background-color: white;
+  border-radius: 4px;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  padding-left: 13px;
+  gap: 5px;
+}
+
+.nav-searsh input {
+  width: 100%;
+  height: 70%;
+  font-size: 18px;
+}
+
+.nav-options:hover {
+  outline: 3px solid black;
+  border-radius: 4px;
+  font-size: 28px;
+}
+
+/*---------FOOTER-------- */
+.footer-video { 
+  width: 250px;
+  height: 165px;
+}
+
+.footer-explore-more {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 28px;
+  background-color: black;
+  color: white;
+  width: 435px;
+  height: 166px;
+}
+
+/*---------SALES CARD-------- */
+.sales-card {
+  display: flex;
+  flex-flow: column nowrap;
+  max-width: 360px;
+  gap: 20px;
+  align-items: flex-start;
+  justify-content: center;
+  justify-self: center;
+}
+
+.sales-card-title {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 60px;
+  line-height: 70px;
+  color: #000000;
+}
+
+.sales-card-content {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 19px;
+  color: #9C9696;
+}
+
+.sales-card-price {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 47px;
+  color: #000000;
+}
+
+.sales-card-buy {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 275px;
+  height: 90px;
+  background-color: #FF0000;
+  font-size: 24px;
+  line-height: 28px;
+  color: #FFFFFF;
+}
+
+/*---------SALES PICTURES-------- */
+.sales-pictures {
+  background: #C4C4C4;
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  justify-content: flex-end;
+  height: 900px;
+  padding-bottom: 40px;
+}
+
+.sales-pictures-selection {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+  box-sizing: border-box;
+  height: 200px;
+}
+
+.sales-pictures-selection img:hover {
+  border-bottom: 8px solid red;
+  border-radius: 10px;
+  width: 110%;
+  height: 110%;
+}
