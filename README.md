@@ -15,7 +15,7 @@
 
  - Os desafios se focam em desenvolver sites e ou coponentes variados (Front End);
 
- - As tecnologias utilizadas são em geral HTML <img src="./assets/readme/html.svg" width="15" height="15")> / CSS <img src="./assets/readme/css.svg" width="15" height="15")> / <img src="./assets/readme/js.svg" width="15" height="15")> JavaScript;
+ - As tecnologias utilizadas são em geral HTML ![](./assets/readme/html.svg){: width="15px"} / CSS ![](./assets/readme/css.svg){: width="15px"} / JavaScript ![](./assets/readme/js.svg){: width="15px"} ;
 
  - Em alguns momentos são pedidos construções com Design Responsivo, mas não sendo padrão; 
 
