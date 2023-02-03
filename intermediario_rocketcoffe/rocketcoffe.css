@@ -1,0 +1,270 @@
+/*RESETS*/
+* {
+  margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+  text-decoration: none;
+  outline: none;
+  box-sizing: border-box;
+  font-family: 'Manrope', sans-serif;
+}
+
+body {
+  background-color: black;
+  display: grid;
+  grid-template-columns: 1fr;
+  justify-content: center;
+  align-items: flex-start;
+  width: 100%;
+  height: 100%;
+  min-width: 375px;
+}
+
+nav {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: flex-start;
+  align-items: center;
+  border-bottom: 1px solid #29292E;
+  height: 100px;
+  width: 100%;
+}
+
+main {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 2;
+  gap: 20px;
+  height: 100%;
+  padding-bottom: 240px;
+  padding-top: 12%;
+}
+
+h2 {
+  font-family: 'Manrope';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 50px;
+  line-height: 68px;
+  letter-spacing: -0.03em;
+  color: #FFFFFF;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  text-align: center;
+}
+
+h3 {
+  font-family: 'Manrope';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 30px;
+  line-height: 41px;
+  text-align: center;
+  letter-spacing: 0.02em;
+  color: #FFFFFF;
+  padding: 0 5%;
+  text-align: center;
+}
+
+/*-----------NAV-----------------*/
+.nav-bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  height: 100px;
+  padding: 0px 25px;
+}
+
+.nav-button-background {
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.nav-button-background img {
+  height: 35px;
+  width: 35px;
+}
+
+#rocketcoffe-img {
+  width: 100%;
+  height: 240px;
+  position: absolute;
+  bottom: 0;
+  z-index: 0;
+}
+
+/*--------Take my Coffe---------*/
+.my-coffe {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-width: 175px;
+  height: 35px;
+  border: 1px solid #8257E5;
+  border-radius: 6px;
+  font-weight: 800;
+  font-size: 11px;
+  line-height: 15px;
+  text-align: center;
+  letter-spacing: 0.02em;
+  color: #FFFFFF;
+  cursor: pointer;
+}
+
+#great-code {
+  margin-top: 6px;
+  color: black;
+  text-shadow: -1px -1px 0 #8257E5, 1px -1px 0 #8257E5, -1px 1px 0 #8257E5, 1px 1px 0 #8257E5;
+}
+
+/*--------- IMG BACKGROUNDS------------*/
+.display-none {
+  display: none;
+  width: 0;
+  height: 0;
+}
+
+#blur-mobile {
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+  z-index: -1;
+}
+
+@media screen and (min-width: 1300px) {
+  
+  body {
+    padding: 0 15%;
+    justify-content: start;
+    align-items: flex-start;
+    height: 100%;
+  }
+
+  main {
+    padding: 5%;
+    align-self: flex-start;
+    width: 100%;
+  }
+
+  nav {
+    border: none;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+    gap: 100px;
+    padding-top: 50px;
+  }
+
+  h2 {
+    font-size: 80px;
+    line-height: 110px;
+  }
+
+  .nav-bar {
+    width: 175px;
+    height: 55px;
+    justify-content: center;
+    align-items: center;
+  }
+
+  #nav-logo-desktop {
+    width: 175px;
+    height: 50px;
+  }
+
+  #blur-1 {
+    position: absolute;
+    z-index: -1;
+    left: 0;
+    bottom: 0;
+  }
+  
+  #blur-2 {
+    position: absolute;
+    z-index: -1;
+    right: 0;
+    top: 0;
+  }
+
+  #rocketcoffe-img {
+    min-width: 500px;
+    width: 50%;
+    height: 50%;
+    display: flex;
+    justify-self: center;
+    position: fixed;
+    left: 25%;
+  }
+}
+
+
+/*NAV - MENU - SMALL SCREEN*/
+
+.nav-menu-height {
+  height: 100%;
+}
+
+.menu-small {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: end;
+  width: 100%;
+  list-style: none;
+  background-color: black;
+}
+
+.menu-small li {
+  border: 1px solid #29292E;
+  background-color: black;
+  display: flex;
+  align-items: center;
+  padding-left: 30px;
+  height: 50px;
+}
+
+.menu-small li:first-child {
+  border-left: 2px solid #8257E5;
+}
+
+.menu-small li a {
+  font-family: 'Manrope';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 25px;
+  color: #A8A8B3;
+}
+
+
+
+/*NAV - MENU - BIG SCREEN*/
+
+.menu-big {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  align-items: center;
+  list-style: none;
+  width: 100%;
+  transition: 0.3s;
+}
+
+.menu-big li a {
+  font-family: 'Manrope';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 19px;
+  letter-spacing: 0.02em;
+  color: #FFFFFF;
+}
+
+.menu-big li a:hover {
+  font-size: 18px;
+  border-left: 4px solid #8257E5;
+}
