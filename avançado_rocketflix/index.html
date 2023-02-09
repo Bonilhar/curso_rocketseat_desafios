@@ -15,10 +15,15 @@
   </header>
   <main class="display-flex-column">
     <section class="display-flex-column">
-      <p>Clique em "Encontrar filme" que traremos informações de algum filme para você assistir hoje.</p>
-      <Button id="buttonGetMovie"><img src="./assets/favico/favicon-32x32.png" alt=""> Encontrar o filme</Button>
+      <p>Para acessar a aplicação você precisa de um KEY CODE da API no site do <a href="./https://www.themoviedb.org/">themoviedb</a></p>
+      <input id="keyCode" type="text" placeholder="Coloque sua Key aqui...">
     </section>
     
+    <section class="display-flex-column">
+      <p>Clique em "Novo filme" que traremos informações de algum filme para você assistir hoje.</p>
+      <Button id="buttonGetMovie"><img src="./assets/favico/favicon-32x32.png" alt=""> Novo filme</Button>
+    </section>
+
     <section id="movieInfo" class="display-flex">
       <img id="moviePoster" src="" alt="">
       <div>

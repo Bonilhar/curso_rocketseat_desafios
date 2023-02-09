@@ -7,9 +7,7 @@
 	vertical-align: baseline;
 }
 
-
 body {
-  height: 100vh;
   width: 100vh;
   background-color: #701e31;
   display: flex;

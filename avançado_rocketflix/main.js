@@ -12,29 +12,33 @@ async function getMovie() {
   então ele vai fazer uma nova busca */
   if (movieData.success == false || 
     movieData.poster_path == null ||
-    movieData.overview == "") {
+    movieData.overview == "" ||
+    movieData.adult == true) {
     let contador = 0 
     do {
       contador++
       urlMovie = randomMovie()
       response = await fetch(urlMovie)
       movieData = await response.json()
-      console.log(urlMovie)
     } while (movieData.success == false || 
       movieData.poster_path == null ||
-      movieData.overview == "")
-    console.log(contador)
+      movieData.overview == "" ||
+      movieData.adult == true)
   }
+  console.log(urlMovie)
   
 
   moviePoster.src = IMG_URL + movieData.poster_path
   movieName.textContent = movieData.original_title
   movieOverview.textContent = movieData.overview
+  window.scrollTo(0, document.body.scrollHeight);
+
 }
 
 function randomMovie() {
-  let random = Math.floor(Math.random() * 20000) + 1
-  let urlMovie = BASE_URL + ${{ secrets.API_KEY_CODE}} + random + "?" + API_KEY + language
+  let random = Math.floor(Math.random() * 853055) + 1
+  let urlMovie = BASE_URL + random + "?" + API_KEY + keyCode.value
+  
   return urlMovie
 }
 
