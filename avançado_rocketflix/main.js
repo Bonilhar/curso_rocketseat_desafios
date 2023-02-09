@@ -24,9 +24,7 @@ async function getMovie() {
       movieData.poster_path == null ||
       movieData.overview == "" ||
       movieData.adult == true)
-  }
-  console.log(urlMovie)
-  
+  }  
 
   moviePoster.src = IMG_URL + movieData.poster_path
   movieName.textContent = movieData.original_title

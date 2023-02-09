@@ -8,17 +8,20 @@
 }
 
 body {
-  width: 100vh;
   background-color: #701e31;
   display: flex;
   flex-flow: column nowrap;
   align-items: center;
   justify-content: center;
   gap: 40px;
+  padding: 50px 30px;
+  scroll-behavior: auto;
+
 }
 
 a {
   width: 60%;
+  max-width: 750px;
   background-color: #d9543a;
   color: #ffe152;
   text-decoration: none;
@@ -50,7 +53,7 @@ a:hover {
   flex-flow: column nowrap;
   align-items: center;
   justify-content: center;
-  gap: 10px;
+  padding: 20px 0;
 }
 
 .links-acess {

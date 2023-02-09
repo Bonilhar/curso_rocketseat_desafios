@@ -29,7 +29,14 @@ header img {
 a {
   text-decoration: none;
   color: white;
-  font-size: 2rem;
+  font-size: 2.5rem;
+  transition: 0.3s;
+  border-bottom: 1px solid black;
+}
+
+a:hover {
+  filter: brightness(0.9);
+  color: black;
 }
 
 h1, h2, p {
