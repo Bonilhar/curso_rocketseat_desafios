@@ -1,0 +1,185 @@
+* {
+  margin: 0;
+	padding: 0;
+	border: 0;
+	font: inherit;
+  text-decoration: none;
+	vertical-align: baseline;
+  box-sizing: border-box;
+}
+
+html {
+	font-size: 62.5%; /*10px*/
+}
+
+body {
+  background: #0E1218;
+  font-family: 'Prompt', sans-serif;
+  color: white;
+  height: 70vh;
+  z-index: 0;
+}
+
+
+.display-flex-JC-AC {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.gap-125 {
+  gap: 12.5rem;
+}
+
+#cardBackground {
+  width: 43rem;
+  height: 70rem;
+  background: black;
+  border-radius: 2.5rem;
+  padding: 2.4rem 1.5rem;
+}
+
+#cardFront {
+  width: 100%;
+  height: 100%;
+  background: #0E1218;
+  border-radius: 2.5rem;
+  z-index: 1;
+}
+
+
+#cardTitleName {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 3.2rem;
+  width: 100%;
+  height: 5.5rem;
+  margin-top: 3.8rem;
+  margin-left: 3.3rem;
+
+}
+
+#cardTitleName div {
+  width: 5.5rem;
+  height: 100%;
+  border-radius: 50%;
+  border: 0.1rem solid white;
+}
+
+#cardTitleName img {
+  width: 3rem;
+  height: 3rem;
+}
+
+#cardTitleName a {
+  font-weight: 400;
+  font-size: 2.4rem;
+  color: white;
+}
+
+#cardTitleName a:hover{
+  filter: brightness(0.8);
+}
+
+#cardAvatar {
+  width: 100%;
+  height: 40rem;
+  overflow: hidden;
+  display: flex;
+  align-items: end;
+}
+
+#cardAvatar img {
+  position: relative;
+  height: 37rem;
+  right: -7rem;
+  border: 1rem solid #8257E5;
+  border-radius: 50%;
+  object-fit: fill;
+}
+
+#cardInfo {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: start;
+  width: 18rem;
+  padding: 2.5rem 2rem;
+  gap: 0.6rem;
+  position: relative;
+  top: -10rem;
+  left: 2rem; 
+  background: linear-gradient(180deg, #000000 3.65%, rgba(70, 69, 69, 0.72) 53.65%, rgba(62, 56, 56, 0.42) 100%);
+  border-radius: 2.5rem;
+  z-index: 2;
+}
+
+.card-info-items {
+  display: flex;
+  align-items: center;
+  gap: 0.9rem;
+  width: 100%;
+  font-weight: 400;
+  font-size: 1.6rem;
+}
+
+.card-info-items img{
+  width: 2rem;
+  height: 2rem;
+}
+
+#cardRocketseat img {
+  width: 2.7rem;
+}
+
+#cardRocketseat {
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  text-decoration: none;
+  font-weight: 400;
+  font-size: 2rem;
+  color: white;
+  gap: 1.2rem;
+  height: 3.4rem;
+  position: relative;
+  top: -10rem;
+  width: 100%;
+  padding-right: 2rem;
+  transition: filter 0.3s;
+}
+
+#cardRocketseat:hover{
+  filter: brightness(0.8);
+}
+
+#cardBackgroundChange {
+  display: flex;
+  flex-flow: column nowrap;
+  gap: 3rem;
+}
+
+#cardBackgroundChange p {
+  font-weight: 400;
+  font-size: 2rem;
+  color: #FFFFFF;
+}
+
+#buttonBackground {
+  background: #000000;
+  border: 0.2rem solid #1A1A1A;
+  border-radius: 1.5rem;
+  padding: 2rem 3rem;
+  color: white;
+  font-weight: 400;
+  font-size: 1.5rem;
+  cursor: pointer;
+  transition: filter 0.3s;
+}
+
+#buttonBackground:hover {
+  filter: brightness(0.8);
+  background-color: #8257E5;
+  font-size: 1.6rem;
+}
