@@ -5,6 +5,10 @@ import {
 } from './api.js'
 
 async function getMovie() {
+  moviePoster.src = ""
+  movieName.textContent = ""
+  movieOverview.textContent = ""
+  
   let urlMovie = randomMovie()
   let response = await fetch(urlMovie)
   let movieData = await response.json()
